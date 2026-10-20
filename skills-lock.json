@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "skills": {
+    "app-store-preflight-skills": {
+      "source": "truongduy2611/app-store-preflight-skills",
+      "ref": "e52e007036fb6edea104b6b49eb01f69c155ad51",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "5d37b39681aa2e325a95a882efcf710185a6a1826c4a7891c2969b4dde0e96e4"
+    },
+    "app-store-review": {
+      "source": "safaiyeh/app-store-review-skill",
+      "ref": "50c03e9daa5aae88547ccf21e75a33aacb879832",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "7838ceacd10a6d9671b188dd7fb1551de87b44d1367e1a8788f06859cb07b9a6"
+    },
+    "apple-design": {
+      "source": "dickwu/apple-design-skill",
+      "ref": "904b0eedc7cc778152f545506075d5bb5219ce77",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "bd7ec2979b70d5e4ca6a86e2ad95dc5bc336986ce6b03e0d84dfabbe43611296"
+    },
+    "asc-cli-usage": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "a5702a60eed35ca16f106c56439b60980ede080d",
+      "sourceType": "github",
+      "skillPath": "skills/asc-cli-usage/SKILL.md",
+      "computedHash": "eb415568da92363644941b54df7ca88bf5d89df565d58e030d48ac0f501506d9"
+    },
+    "asc-localize-metadata": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "fa40a3c466501367f373e92d59c9bc81a8d10891",
+      "sourceType": "github",
+      "skillPath": "skills/asc-localize-metadata/SKILL.md",
+      "computedHash": "7ee40cae21c8ac15cc866aaa78057102d6862c7a6ca9ecbfe8e8924ce47a3a45"
+    },
+    "asc-metadata-sync": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "a5702a60eed35ca16f106c56439b60980ede080d",
+      "sourceType": "github",
+      "skillPath": "skills/asc-metadata-sync/SKILL.md",
+      "computedHash": "fffb5deb78704736e87fb4039004dcae564ad33205efa3889485fd7b1ae3853c"
+    },
+    "asc-release-flow": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "a5702a60eed35ca16f106c56439b60980ede080d",
+      "sourceType": "github",
+      "skillPath": "skills/asc-release-flow/SKILL.md",
+      "computedHash": "95ca94d431a9930f26c4efe157c449312eaf77f5b214661a2000629609974e14"
+    },
+    "asc-shots-pipeline": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "f8785bd36286395eb439bd886f47b52305215147",
+      "sourceType": "github",
+      "skillPath": "skills/asc-shots-pipeline/SKILL.md",
+      "computedHash": "3b1e906630dc988bfa4fde2effb2b02fa7fc26b123bd7227c13382ecaa6ab7a6"
+    },
+    "asc-signing-setup": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "0b8bc213e6676c6ac28cb649a748b56fb7d9bafc",
+      "sourceType": "github",
+      "skillPath": "skills/asc-signing-setup/SKILL.md",
+      "computedHash": "4a5beb44ae3089a892f9a8845e217e28c6ba9e1de5eaf79c46f105b58bc04fb2"
+    },
+    "asc-submission-health": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "6fb938484a876af65fe99d0249f122eac09db98b",
+      "sourceType": "github",
+      "skillPath": "skills/asc-submission-health/SKILL.md",
+      "computedHash": "875be4bf1ad0db880588a48537ddfc70df7e072c7c030af38b0060f943ce8589"
+    },
+    "asc-testflight-orchestration": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "dfe90333ce5264518a35c215a76f138cfd7982e5",
+      "sourceType": "github",
+      "skillPath": "skills/asc-testflight-orchestration/SKILL.md",
+      "computedHash": "ede2e2e288573f73ca1de8211963b71757a077dff3e358399af685a8c87c789c"
+    },
+    "asc-whats-new-writer": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "99255d95687706eaa2dec226e78d0a7586c0081f",
+      "sourceType": "github",
+      "skillPath": "skills/asc-whats-new-writer/SKILL.md",
+      "computedHash": "de84772f057ca10600b3dee2aadd1cf8d5ef80aeaf293b13cda3ee08814699c1"
+    },
+    "asc-xcode-build": {
+      "source": "rorkai/app-store-connect-cli-skills",
+      "ref": "a5702a60eed35ca16f106c56439b60980ede080d",
+      "sourceType": "github",
+      "skillPath": "skills/asc-xcode-build/SKILL.md",
+      "computedHash": "1a944dbc0b96febbe26319e07fbd0f9e3f6b3517165c4c91e850b3ebf2a9413b"
+    },
+    "aso": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "0fe63115e0affd870ae161a83005bf9de3e7233b",
+      "sourceType": "github",
+      "skillPath": "skills/aso/SKILL.md",
+      "computedHash": "12f6cf8fc8309846f2f5628b5f4d06616d000732c668fc19d7d900ca8da57bc3"
+    },
+    "brainstorming": {
+      "source": "obra/superpowers",
+      "ref": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "sourceType": "github",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "computedHash": "fc6339f0e5b48c63279bd4f6c6340db55301b69ccc37a13e1e52bd5b3062746c"
+    },
+    "code-review": {
+      "source": "mattpocock/skills",
+      "ref": "3da8c01116264675eeefbd6e9d59c734de9095cc",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/code-review/SKILL.md",
+      "computedHash": "57cfd4ceb011f05e58a1a4f4cad3b2e03419d371f8990f4bcb32ff0d435a039f"
+    },
+    "competitors": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "087b1714aeb81793938a91192b6b53ba05510139",
+      "sourceType": "github",
+      "skillPath": "skills/competitors/SKILL.md",
+      "computedHash": "38efdc0ec5c612ca82c392c026038834da6da078a79e92dd89cd8d3d08f0519b"
+    },
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "801b750f9a2d635d6461a1c8ab71a2eb4873065d",
+      "sourceType": "github",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "computedHash": "6341d240554cb1bcdcce414e9024af9a45f2606bd15493fb6c9a170945a0a0e9"
+    },
+    "customer-research": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "a8ac2636ec38004c5a6ab08acde9d68f2d3d0e22",
+      "sourceType": "github",
+      "skillPath": "skills/customer-research/SKILL.md",
+      "computedHash": "1ffc6f8bf17af451e3f6b65fc18ff0162afaf0c6eab176e0afda17582d87f221"
+    },
+    "directory-submissions": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "d7a1c7a45e9f1381032c52039c64532a3ad5a108",
+      "sourceType": "github",
+      "skillPath": "skills/directory-submissions/SKILL.md",
+      "computedHash": "417cac1c79ede4aa1abcacb521cf6c6d5bcbf9b1bc1e66266d8a2e52ea447adb"
+    },
+    "intent-driven-development": {
+      "source": "affaan-m/ecc",
+      "ref": "ff1bfa1b7727938e7acaf8f857e5eab69c7f9e25",
+      "sourceType": "github",
+      "skillPath": "skills/intent-driven-development/SKILL.md",
+      "computedHash": "d6e4de51ec724a67d51264b09d06d8208c8046453b8a46dbf9a8e9a2dea1d7c6"
+    },
+    "jobs-to-be-done": {
+      "source": "wondelai/skills",
+      "ref": "73de8a53f618ce9361673a2a9eb80532459658fb",
+      "sourceType": "github",
+      "skillPath": "jobs-to-be-done/SKILL.md",
+      "computedHash": "d4ec70d690ae20b80664066a55964a9834e4d8134f5812ba6b7fb9104ea7c3b7"
+    },
+    "launch": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "b7fb899ff4aff55a61f3cbc692b3e2b50d3f013b",
+      "sourceType": "github",
+      "skillPath": "skills/launch/SKILL.md",
+      "computedHash": "b46c65a3d55e1721a2e65bfe4fc6826ecdc1c6846b62ffee4fead2188f556243"
+    },
+    "marketing-ideas": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "365b412152b9542499ca1439426f7fc3cc92bb65",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-ideas/SKILL.md",
+      "computedHash": "63a1f27ff2c8ca77bf9ad8d2df4252d214d597b437c7ba2d23619248225000ad"
+    },
+    "marketing-plan": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "365b412152b9542499ca1439426f7fc3cc92bb65",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-plan/SKILL.md",
+      "computedHash": "f323cf8d7287981072fc1272c21d9f110f1f82b6ffdf8218273b187c23ff4e42"
+    },
+    "paywalls": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "30f9b9a729bbbe3da562fc1108c31f3a35afcca1",
+      "sourceType": "github",
+      "skillPath": "skills/paywalls/SKILL.md",
+      "computedHash": "1f0b8d15770d2e7737b818408dc5877b2eadc4cab072cdfb3529349ab059815f"
+    },
+    "pricing": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "22dcd2644c12e5639a74ada522aef7c24948e677",
+      "sourceType": "github",
+      "skillPath": "skills/pricing/SKILL.md",
+      "computedHash": "6fbe2646324fb367e6b854f91de063996485c0b4ef4b98e7ca8b21629e3e967b"
+    },
+    "product-marketing": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "80540111974586a9ae9d74edc9ca6e5b8590e6b8",
+      "sourceType": "github",
+      "skillPath": "skills/product-marketing/SKILL.md",
+      "computedHash": "b8a9cd747705923a7a29cda12e478594e3a5062d8f7c7bfbf19d7fc0b24cee76"
+    },
+    "public-relations": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "a8ac2636ec38004c5a6ab08acde9d68f2d3d0e22",
+      "sourceType": "github",
+      "skillPath": "skills/public-relations/SKILL.md",
+      "computedHash": "88b211dfea9bb4142b0d0af3ca3fda2a46cd1c48a9d44e7f36dd5878edcb3818"
+    },
+    "swiftui-pro": {
+      "source": "twostraws/swiftui-agent-skill",
+      "ref": "f9800713b24580bc444931949aad4519128605e8",
+      "sourceType": "github",
+      "skillPath": "swiftui-pro/SKILL.md",
+      "computedHash": "e0edf9a937bbb8c86c170b130ff825f158cc286f07ec477b67835e9c1b20267e"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "ref": "3f599139104dfceabc7754eeb91319802f85e042",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/tdd/SKILL.md",
+      "computedHash": "daf55026f456af104a72fa43247f7bcec89e5127316dc5b1b8d675d6a9d8ce94"
+    },
+    "verification-before-completion": {
+      "source": "obra/superpowers",
+      "ref": "3be5aad3dd2400ef23b15680969f4bcd3b6d7b8b",
+      "sourceType": "github",
+      "skillPath": "skills/verification-before-completion/SKILL.md",
+      "computedHash": "b529822bdac4b197b180fe12225cff86b930b65910435103c10622df7f041651"
+    }
+  }
+}

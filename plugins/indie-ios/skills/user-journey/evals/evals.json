@@ -1,0 +1,52 @@
+{
+  "skill_name": "user-journey",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Work out the user journeys for this app from what it is for, and tell me where the app doesn't support them.",
+      "expected_output": "Run in a portfolio app repo whose .agents/product-marketing.md has a job statement and quotes, with no docs/JOURNEYS.md. Runs map mode. Writes 3 to 5 journeys, each a situation from the job (no name, age or demographic persona), with stages, touchpoints including any outside the app the code has (notification, widget, Live Activity), file:line per stage, a moment of truth, conditions, and a source tag per line. Traces each journey through the code and reports gaps with two or three options each and a recommended one. Writes docs/JOURNEYS.md, docs/JOURNEY-AUDIT.md and a Journeys section in docs/ROADMAP.md, and changes no source file.",
+      "files": [],
+      "assertions": [
+        "Writes docs/JOURNEYS.md with between 3 and 5 journeys",
+        "Each journey is named after a situation from the job, not a demographic persona",
+        "Each stage cites a file:line in the app's source",
+        "Journeys include a touchpoint outside the app when the app has a widget, notification or Live Activity",
+        "Each journey names a moment of truth and the conditions to walk",
+        "Lines carry a source tag ([quote], [code], [CLAUDE.md] or [assumption])",
+        "Every gap in docs/JOURNEY-AUDIT.md has at least two options with one marked as recommended",
+        "Does not repeat a finding already listed in docs/LAUNCH-FIRST-IMPRESSION.md or docs/ROADMAP.md",
+        "docs/ROADMAP.md has a 'Journeys' section with unchecked items named after journey stages",
+        "No Swift source file was changed"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Open the app in the simulator and go through it like a real user would. What should we improve?",
+      "expected_output": "Run in the same repo after eval 1, on a Mac with Xcode, with docs/JOURNEYS.md present. Runs walk mode. Builds the app, creates its own simulator for the walk (cloning only a shut-down device) and passes its UDID to every command, never touching the owner's booted simulators, picks a starting state the journey's user could really be in, and walks the main journey first, then the conditions most likely to break its moment of truth, writing the expectation before each action. Each finding cites a screenshot path, the condition and file:line. Stages it could not reach (real purchase, time passing, a widget it cannot add) are under Not walked. Rewrites docs/JOURNEY-AUDIT.md and adds missing roadmap items; deletes only the simulator it created.",
+      "files": [],
+      "assertions": [
+        "Builds and launches the app in a simulator it created for the walk, passing that simulator's UDID to every driver call",
+        "Does not report a problem that only happens because of a mock service, a missing StoreKit configuration or a demo seed",
+        "Does not erase, reset or delete a simulator or app data it did not create",
+        "Walks at least one journey under a condition other than the default (largest text, dark, denied permission, kill and reopen, another language)",
+        "Each walk finding cites a screenshot path under screenshots/journeys/ and a file:line",
+        "Records an expectation for a step before describing what the screen showed",
+        "Lists unreachable stages under 'Not walked' with a reason instead of assuming they work",
+        "Does not add launch arguments, debug hooks or UI tests to the app",
+        "docs/JOURNEY-AUDIT.md is dated and says walk, the commit and the simulator used",
+        "No Swift source file was changed"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Map the user journeys for this app.",
+      "expected_output": "Run in a repo whose .agents/product-marketing.md exists but has no job statement. Says the job is missing and asks whether to backfill it with jobs-to-be-done first, instead of inventing a job or personas.",
+      "files": [],
+      "assertions": [
+        "Says that .agents/product-marketing.md has no job statement",
+        "Offers to run jobs-to-be-done first",
+        "Does not write docs/JOURNEYS.md built on an invented job"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "indie-ios-kit",
+  "owner": {
+    "name": "Harry",
+    "email": "thedv91@gmail.com"
+  },
+  "description": "Skills for building, shipping and marketing the indie iOS app portfolio.",
+  "plugins": [
+    {
+      "name": "indie-ios",
+      "source": "./plugins/indie-ios",
+      "description": "The full idea-to-launch skill set for an indie iOS app: ship-app (which skill runs at each phase), new-app (repo template), store-assets (header, search-result and new-device images), first-impression (first-session audit and launch-week plan before 1.0), user-journey (journeys derived from the business, checked in code and walked in the simulator), plus pinned third-party skills for jobs-to-be-done research, acceptance criteria, SwiftUI, TDD, App Store Connect (asc), App Review checks, ASO, launch marketing and 12-month marketing plans.",
+      "category": "workflow",
+      "tags": ["ios", "swiftui", "app-store", "aso", "marketing"]
+    }
+  ]
+}

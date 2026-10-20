@@ -1,0 +1,64 @@
+{
+  "skill_name": "first-impression",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audit the first run of this app before I submit 1.0.",
+      "expected_output": "Run in a portfolio app repo checked out at a commit before its first-run fixes, with no audit doc (remove docs/LAUNCH-FIRST-IMPRESSION.md, its CLAUDE.md link and the roadmap's First impression section from the copy). States the first session's one job from CLAUDE.md. Traces cold launch, onboarding, empty state, first core action, result screen and second session with file:line. Finds: untouched starting values saved as real data; entered values lost on Cancel or swipe-down; a reminder offer that is lost for good when dismissed; one saved item showing a zero change and lowest equal to highest; no requestReview call; an empty home screen that is mostly locked Pro items, as a finding with a fix; a free integration the listing names that is buried in Settings; a splash on every cold launch under owner decisions. Writes docs/LAUNCH-FIRST-IMPRESSION.md in the skill's structure and a First impression section in docs/ROADMAP.md, and implements no fix.",
+      "files": [],
+      "assertions": [
+        "Writes docs/LAUNCH-FIRST-IMPRESSION.md",
+        "States the first session's one job: the core action plus the moment the user sees value",
+        "Finds that advancing past an untouched input saves its starting value as real data",
+        "Finds that Cancel or swipe-down discards entered values without asking",
+        "Finds that the reminder offer is lost for good when the result screen is dismissed unanswered",
+        "Finds that a detail screen with one saved item shows a zero change and lowest equal to highest",
+        "Finds that the app never calls requestReview (no automatic rating prompt)",
+        "Finds that the empty home screen shows mostly locked Pro items to a new free user",
+        "Finds that the core action's first step does not match what onboarding and the empty state promise",
+        "Puts the splash on every cold launch under owner decisions or flags its duration",
+        "Findings cite file:line in the app's source",
+        "docs/ROADMAP.md has a 'First impression' section with one unchecked item per proposed fix",
+        "No Swift source file was changed (audit only, no fixes implemented)",
+        "Lists the mostly locked empty home screen as a finding with a proposed fix, not only as an owner decision",
+        "Finds that a free integration the listing names is reachable only through a default-off Settings toggle"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "People install the app, try it once and don't come back. Look at what a brand-new user goes through, and tell me when we should be asking for a review.",
+      "expected_output": "Run in the same app at a later commit where the data-safety problems are fixed, with the audit doc removed. Recognises the fixed behaviour (untouched values not saved, swipe-down blocked once a value is entered) as protecting the first session instead of reporting it as broken. Finds the remaining retention problems with file:line: the lost reminder offer, the one-item detail screen, the mostly locked empty home screen, the missing rating prompt. Recommends requestReview after the second successful core action, never after the first, a cancel or the paywall, never from a button, with a Settings write-review link, citing Guideline 5.6.1 and the 3-per-365-days limit. Writes the doc and roadmap items without implementing fixes.",
+      "files": [],
+      "assertions": [
+        "Writes docs/LAUNCH-FIRST-IMPRESSION.md",
+        "Does not report untouched starting values being saved as an open problem (already fixed at this commit)",
+        "Does not report swipe-down or Cancel losing entered values as an open problem (already fixed)",
+        "Finds that the reminder offer is lost for good when the result screen is dismissed unanswered",
+        "Finds that a detail screen with one saved item shows a zero change and lowest equal to highest",
+        "Finds that the empty home screen shows mostly locked Pro items to a new free user",
+        "Recommends asking for a review after the second successful core action (not the first), never after a cancel or the paywall",
+        "Says not to call requestReview from a button and to use a write-review link for the Settings Rate row",
+        "Cites App Review Guideline 5.6.1 or the 3-prompts-per-365-days system limit",
+        "Findings cite file:line in the app's source",
+        "docs/ROADMAP.md has a 'First impression' section with one unchecked item per proposed fix",
+        "No Swift source file was changed (audit only, no fixes implemented)",
+        "Lists the mostly locked empty home screen as a finding with a proposed fix, not only as an owner decision"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "We're submitting 1.0 in about a month. Plan our launch week on the App Store and check that the first-session plan is still right.",
+      "expected_output": "Run in an app repo that already has docs/LAUNCH-FIRST-IMPRESSION.md. Treats it as a re-run: keeps the file's structure, re-checks each listed problem against the code, keeps those still open and moves fixed ones to what protects the job, and does not start the file over. The store-side plan names a featuring nomination (App Launch) at least three weeks ahead, pre-order, manual release, TestFlight with outside testers, App Store Connect Analytics without SDKs, and localized captions; labels the seven-day boost as vendor-observed, not Apple-documented; uses no invented numbers. Does not duplicate existing roadmap items, does not edit the listing, and implements no fix.",
+      "files": [],
+      "assertions": [
+        "Keeps the existing docs/LAUNCH-FIRST-IMPRESSION.md structure (its four sections) instead of starting the file over",
+        "Re-checks each listed problem against the code: keeps the open ones and moves fixed ones to what protects the job",
+        "Plans a featuring nomination of type App Launch at least three weeks before release",
+        "Plan covers pre-order, manual release, TestFlight with outside testers and App Store Connect Analytics",
+        "Labels the roughly seven-day launch boost as vendor-observed or not documented by Apple",
+        "Each roadmap item appears once (no duplicated First impression items)",
+        "No Swift source file was changed (audit only, no fixes implemented)"
+      ]
+    }
+  ]
+}
