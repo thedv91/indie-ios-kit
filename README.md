@@ -18,7 +18,7 @@ Then in each app repo:
 claude plugin install indie-ios@indie-ios-kit --scope local
 ```
 
-`--scope local` enables the plugin for that repo only (in `.claude/settings.local.json`), so the 44 iOS
+`--scope local` enables the plugin for that repo only (in `.claude/settings.local.json`), so the 43 iOS
 skills stay out of non-iOS projects. Inside a session, `/plugin install indie-ios@indie-ios-kit` does the
 same. Skills are namespaced: `/indie-ios:ship-app`, `/indie-ios:new-app`, `/indie-ios:store-assets`; Claude also finds them by name.
 
@@ -38,7 +38,7 @@ It copies the template, asks for the facts the placeholders need, and hands over
 | `customer-research`, `pricing`, `product-marketing`, `competitors`, `paywalls`, `aso`, `copywriting`, `launch`, `directory-submissions`, `public-relations`, `marketing-plan`, `marketing-ideas`, `referrals`, `social`, `free-tools`, `ai-seo`, `marketing-psychology`, `community-marketing`, `influencer-marketing` | coreyhaines31/marketingskills |
 | `swiftui-pro` | twostraws/swiftui-agent-skill |
 | `apple-design` | dickwu/apple-design-skill |
-| `tdd`, `code-review` | mattpocock/skills |
+| `tdd` | mattpocock/skills |
 | `jobs-to-be-done` | wondelai/skills |
 | `intent-driven-development` | affaan-m/ecc |
 | `asc-*` (9 skills) | rorkai/app-store-connect-cli-skills |
@@ -81,7 +81,7 @@ one app's name; everything app-specific comes from that app's `CLAUDE.md`.
 ```
 .claude-plugin/marketplace.json          marketplace catalog
 plugins/indie-ios/.claude-plugin/plugin.json
-plugins/indie-ios/skills/<name>/         the 44 skills (ship-app, new-app, store-assets, first-impression, user-journey + 39 vendored)
+plugins/indie-ios/skills/<name>/         the 43 skills (ship-app, new-app, store-assets, first-impression, user-journey + 38 vendored)
 plugins/indie-ios/skills/new-app/template/   files new-app copies into a repo
 skills-lock.json                         source and hash of each vendored skill
 scripts/sync-skills.sh                   rebuilds the vendored skills from the lock

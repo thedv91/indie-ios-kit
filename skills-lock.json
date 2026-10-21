@@ -113,13 +113,6 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "computedHash": "fc6339f0e5b48c63279bd4f6c6340db55301b69ccc37a13e1e52bd5b3062746c"
     },
-    "code-review": {
-      "source": "mattpocock/skills",
-      "ref": "3da8c01116264675eeefbd6e9d59c734de9095cc",
-      "sourceType": "github",
-      "skillPath": "skills/engineering/code-review/SKILL.md",
-      "computedHash": "57cfd4ceb011f05e58a1a4f4cad3b2e03419d371f8990f4bcb32ff0d435a039f"
-    },
     "community-marketing": {
       "source": "coreyhaines31/marketingskills",
       "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",

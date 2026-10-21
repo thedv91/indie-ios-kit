@@ -87,8 +87,11 @@ Loop over `docs/ROADMAP.md`, one item per PR:
    `illustration-style` with `vectorcraft-illustration` for any artwork (if the repo has no `illustration-style`
    skill yet, create it with `illustration-setup` first), `paywalls` for paywall copy and layout.
 4. Build and run locally, walk the item's journey stage in the simulator (on a Mac; a cloud session without
-   Xcode leaves this to the owner) and check each acceptance criterion from step 2, then `code-review` on the diff and `verification-before-completion` before calling it done.
-   If the item changed how a journey goes, update that stage in `docs/JOURNEYS.md` in the same PR.
+   Xcode leaves this to the owner) and check each acceptance criterion from step 2. Then review the diff with
+   Claude Code's built-in `/code-review`: `high` for an item that has acceptance criteria from step 2, `medium`
+   for the rest. Fix what it confirms, then run `verification-before-completion` before calling it done. The kit
+   ships no review skill of its own: the criteria check above is the spec review, and `/code-review` looks for
+   bugs. If the item changed how a journey goes, update that stage in `docs/JOURNEYS.md` in the same PR.
 5. Push, wait for CI to go green, then tick the item.
 
 When the last v1.0 item under "Next" is ticked, before the 1.0 submission:
@@ -146,6 +149,15 @@ With every release after launch:
 7. Before each release, `user-journey` (walk) on the journeys the release touched; its items join the roadmap
    like any other.
 
+Growth, once the first two weeks after launch are over:
+
+8. `marketing-plan`: the 12-month plan, sized to a solo budget and to the rules below. `marketing-ideas` is for
+   when the plan runs dry or the owner asks for ideas.
+9. The channels the plan picks, each started only with the owner's yes: `community-marketing` (the subreddit,
+   Discord or forum where people with the job already gather), `influencer-marketing` (creators and newsletter
+   sponsorships), `referrals` (share and refer-a-friend loops, replies to App Store reviews), `free-tools` (a
+   small free web tool that leads to the app), `ai-seo` (the app's website, so AI assistants cite it).
+
 ## How the product skills fit together
 
 `jobs-to-be-done`, `user-journey`, `intent-driven-development` and `brainstorming` come from different authors.
@@ -164,17 +176,44 @@ where they disagree:
 - Once phase 1 is done, change `docs/JOURNEYS.md` or the "Next" list only with the owner's yes, apart from a
   PR updating the stage it just changed (phase 2 step 4).
 
+## Which skill owns a request several of them claim
+
+The vendored skills' descriptions overlap, and several were written for web products. When a request matches
+more than one, this table decides:
+
+| Request | Owner | The other skill's part |
+| --- | --- | --- |
+| Release notes, What's New, changelog | `asc-whats-new-writer` | `launch` only announces the release on owned channels |
+| Launch checklist, pre-launch QA, "we're about to ship" | the phase 3 gate, then the launch-week plan from `first-impression` | `launch` runs its readiness gate at phase 4 step 1 |
+| GTM plan | `launch` for the first two weeks | `marketing-plan` for anything longer |
+| Product Hunt | `launch` plans the day | `directory-submissions` writes and tracks the listing |
+| Job to be done, JTBD | `jobs-to-be-done` writes the job | `customer-research` collects the quotes it cites |
+| Compare with competitors | `aso` for App Store competitors | `competitors` only for vs and alternative pages on the app's website |
+| Onboarding, first run, rating prompt | `first-impression` | `apple-design` reviews how a screen looks; `referrals` only replies to App Store reviews |
+| UX audit, walk the app as a user | `user-journey` | `apple-design` for a HIG review of given screens |
+| Ambassador program | `community-marketing` for unpaid advocates | `influencer-marketing` for paid creators, `referrals` for a reward per referral |
+| Screenshots and store images | the app's screenshots doc, automated by `asc-shots-pipeline` | `store-assets` for the header, search-result image and new devices; `asc-metadata-sync` for text |
+| Marketing ideas, "brainstorm marketing" | `marketing-ideas` | `brainstorming` is for the product, as above |
+| Persuasion, anchoring, social proof | `marketing-psychology`, applied inside `copywriting`, `paywalls` or `pricing` | |
+| Rejection check before submitting | `app-store-preflight-skills` and `app-store-review`, both | |
+| Submission stuck or rejected | `asc-submission-health` | `asc-release-flow` stages and submits |
+
 ## Rules that win over any skill above
 
 The installed marketing and store skills are generic. Where they conflict with `CLAUDE.md`, `CLAUDE.md` wins.
 These hold for every app in the portfolio:
 
 - No analytics, attribution SDKs, accounts, email capture or network calls unless `CLAUDE.md` allows them.
-  Skip any step that needs them.
+  Skip any step that needs them. This covers referral and affiliate tracking, and a waitlist or free tool that
+  collects email addresses.
 - No claim the app's `CLAUDE.md` bans (health outcomes, unmeasured savings, "free" in store metadata), in any
   copy, listing, screenshot caption or post.
 - Numbers in copy (sizes, savings, speed) come from a measured result recorded in `docs/`, never from an estimate.
 - No invented reviews, ratings, user counts or testimonials. Proof points come from real reviews only.
+- No invented scarcity or urgency (countdowns, "only N left"), whatever `marketing-psychology` or `paywalls`
+  suggests.
+- Nothing is offered in exchange for an App Store rating or review. A referral reward or creator offer that
+  unlocks anything in the app goes through `app-store-review` before it is built.
 - Guideline 4.3: listing visuals, icon and copy belong to this app; never reuse them for another app in the
   portfolio, and never copy another portfolio app's listing into this one.
 
@@ -185,7 +224,7 @@ Run dry runs freely. Get the owner's yes, per action, before:
 - `asc metadata push` or `apply` without `--dry-run`, screenshot uploads, price or availability changes
 - adding external TestFlight testers or opening a public link
 - submitting for review, releasing a version, or cancelling a submission
-- posting to social, emailing a journalist, or submitting to a directory
+- posting to social or in a community, emailing a journalist, messaging a creator, or submitting to a directory
 
-If a skill points to another skill that is not installed (for example `cro` or `emails`), say so and
-ask, rather than improvising its steps.
+If a skill points to another skill that is not installed (for example `cro`, `emails`, `seo-audit`,
+`ad-creative` or `offers`), say so and ask, rather than improvising its steps.
