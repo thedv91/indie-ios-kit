@@ -18,7 +18,7 @@ Then in each app repo:
 claude plugin install indie-ios@indie-ios-kit --scope local
 ```
 
-`--scope local` enables the plugin for that repo only (in `.claude/settings.local.json`), so the 37 iOS
+`--scope local` enables the plugin for that repo only (in `.claude/settings.local.json`), so the 44 iOS
 skills stay out of non-iOS projects. Inside a session, `/plugin install indie-ios@indie-ios-kit` does the
 same. Skills are namespaced: `/indie-ios:ship-app`, `/indie-ios:new-app`, `/indie-ios:store-assets`; Claude also finds them by name.
 
@@ -35,7 +35,7 @@ It copies the template, asks for the facts the placeholders need, and hands over
 | `first-impression` | this kit: first-session audit before 1.0 (data safety, empty states, permissions, rating prompt, reminder) and the launch-week plan; writes `docs/LAUNCH-FIRST-IMPRESSION.md` and roadmap items |
 | `user-journey` | this kit: journeys derived from the job and business rules (`docs/JOURNEYS.md`), traced through the code with options for each gap (map) or walked in a simulator under real conditions (walk); writes `docs/JOURNEY-AUDIT.md` and roadmap items |
 | `brainstorming`, `verification-before-completion` | obra/superpowers |
-| `customer-research`, `pricing`, `product-marketing`, `competitors`, `paywalls`, `aso`, `copywriting`, `launch`, `directory-submissions`, `public-relations`, `marketing-plan`, `marketing-ideas` | coreyhaines31/marketingskills |
+| `customer-research`, `pricing`, `product-marketing`, `competitors`, `paywalls`, `aso`, `copywriting`, `launch`, `directory-submissions`, `public-relations`, `marketing-plan`, `marketing-ideas`, `referrals`, `social`, `free-tools`, `ai-seo`, `marketing-psychology`, `community-marketing`, `influencer-marketing` | coreyhaines31/marketingskills |
 | `swiftui-pro` | twostraws/swiftui-agent-skill |
 | `apple-design` | dickwu/apple-design-skill |
 | `tdd`, `code-review` | mattpocock/skills |
@@ -51,7 +51,7 @@ upstream licenses, and redistributing them publicly needs a license check first.
 
 `ship-app` also uses three user-level skills that are not in the plugin: `grilling`
 (`npx skills add mattpocock/skills -g -s grilling`), and the owner's own `illustration-setup` and
-`vectorcraft-illustration` in `~/.claude/skills`. It mentions `social`, `cro` and `emails` too; none is
+`vectorcraft-illustration` in `~/.claude/skills`. It mentions `cro` and `emails` too; neither is
 installed, and it tells Claude to ask before improvising them.
 
 ## Update
@@ -81,7 +81,7 @@ one app's name; everything app-specific comes from that app's `CLAUDE.md`.
 ```
 .claude-plugin/marketplace.json          marketplace catalog
 plugins/indie-ios/.claude-plugin/plugin.json
-plugins/indie-ios/skills/<name>/         the 37 skills (ship-app, new-app, store-assets, first-impression, user-journey + 32 vendored)
+plugins/indie-ios/skills/<name>/         the 44 skills (ship-app, new-app, store-assets, first-impression, user-journey + 39 vendored)
 plugins/indie-ios/skills/new-app/template/   files new-app copies into a repo
 skills-lock.json                         source and hash of each vendored skill
 scripts/sync-skills.sh                   rebuilds the vendored skills from the lock

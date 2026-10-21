@@ -1,6 +1,13 @@
 {
   "version": 1,
   "skills": {
+    "ai-seo": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/ai-seo/SKILL.md",
+      "computedHash": "d17bcf49642639b1978e59aee3f13a1a5c80198a56c3c33cb7aee34df7b79359"
+    },
     "app-store-preflight-skills": {
       "source": "truongduy2611/app-store-preflight-skills",
       "ref": "e52e007036fb6edea104b6b49eb01f69c155ad51",
@@ -113,6 +120,13 @@
       "skillPath": "skills/engineering/code-review/SKILL.md",
       "computedHash": "57cfd4ceb011f05e58a1a4f4cad3b2e03419d371f8990f4bcb32ff0d435a039f"
     },
+    "community-marketing": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/community-marketing/SKILL.md",
+      "computedHash": "07ae29742d77a243b988267ae4bfdab90b3ca8219ab15db0feeed94c054ba1c2"
+    },
     "competitors": {
       "source": "coreyhaines31/marketingskills",
       "ref": "087b1714aeb81793938a91192b6b53ba05510139",
@@ -140,6 +154,20 @@
       "sourceType": "github",
       "skillPath": "skills/directory-submissions/SKILL.md",
       "computedHash": "417cac1c79ede4aa1abcacb521cf6c6d5bcbf9b1bc1e66266d8a2e52ea447adb"
+    },
+    "free-tools": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/free-tools/SKILL.md",
+      "computedHash": "b48e30fb2e941e1212afa6ec8a3130638de783d29a61ac917c6af5e67133047c"
+    },
+    "influencer-marketing": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/influencer-marketing/SKILL.md",
+      "computedHash": "65d83162f351e934fd045a81a43f10fb1fe77b77d53090daf06855d6e6bffd6f"
     },
     "intent-driven-development": {
       "source": "affaan-m/ecc",
@@ -176,6 +204,13 @@
       "skillPath": "skills/marketing-plan/SKILL.md",
       "computedHash": "f323cf8d7287981072fc1272c21d9f110f1f82b6ffdf8218273b187c23ff4e42"
     },
+    "marketing-psychology": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/marketing-psychology/SKILL.md",
+      "computedHash": "50d735eb0f5c36f379ed2200f21aeacc9b9ad85667b5d33ec6111857352a1340"
+    },
     "paywalls": {
       "source": "coreyhaines31/marketingskills",
       "ref": "30f9b9a729bbbe3da562fc1108c31f3a35afcca1",
@@ -203,6 +238,20 @@
       "sourceType": "github",
       "skillPath": "skills/public-relations/SKILL.md",
       "computedHash": "88b211dfea9bb4142b0d0af3ca3fda2a46cd1c48a9d44e7f36dd5878edcb3818"
+    },
+    "referrals": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/referrals/SKILL.md",
+      "computedHash": "2f2480c93fbf8af8b7e2ca447d7ab18ae76329d3748c0e56906fa9e24add3743"
+    },
+    "social": {
+      "source": "coreyhaines31/marketingskills",
+      "ref": "e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b",
+      "sourceType": "github",
+      "skillPath": "skills/social/SKILL.md",
+      "computedHash": "665681c9f0815617bcfedd5b3334404acebfe2b3dfececc67300e276c0cdcd18"
     },
     "swiftui-pro": {
       "source": "twostraws/swiftui-agent-skill",

@@ -187,5 +187,5 @@ Run dry runs freely. Get the owner's yes, per action, before:
 - submitting for review, releasing a version, or cancelling a submission
 - posting to social, emailing a journalist, or submitting to a directory
 
-If a skill points to another skill that is not installed (for example `social`, `cro` or `emails`), say so and
+If a skill points to another skill that is not installed (for example `cro` or `emails`), say so and
 ask, rather than improvising its steps.
