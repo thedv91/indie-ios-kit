@@ -22,13 +22,6 @@
       "skillPath": "SKILL.md",
       "computedHash": "7838ceacd10a6d9671b188dd7fb1551de87b44d1367e1a8788f06859cb07b9a6"
     },
-    "apple-design": {
-      "source": "dickwu/apple-design-skill",
-      "ref": "904b0eedc7cc778152f545506075d5bb5219ce77",
-      "sourceType": "github",
-      "skillPath": "SKILL.md",
-      "computedHash": "bd7ec2979b70d5e4ca6a86e2ad95dc5bc336986ce6b03e0d84dfabbe43611296"
-    },
     "asc-cli-usage": {
       "source": "rorkai/app-store-connect-cli-skills",
       "ref": "a5702a60eed35ca16f106c56439b60980ede080d",

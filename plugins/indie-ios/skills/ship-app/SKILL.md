@@ -83,7 +83,7 @@ Loop over `docs/ROADMAP.md`, one item per PR:
    building. Skip the criteria when the item's outcome is already observable. An app that passed phase 1
    before `jobs-to-be-done` and `user-journey` joined the kit has neither the job nor `docs/JOURNEYS.md` yet:
    offer to backfill them first.
-3. Write it. `swiftui-pro` and `apple-design` for SwiftUI views, `tdd` for logic in the app's domain package,
+3. Write it. `swiftui-pro` for SwiftUI views, `tdd` for logic in the app's domain package,
    `illustration-style` with `vectorcraft-illustration` for any artwork (if the repo has no `illustration-style`
    skill yet, create it with `illustration-setup` first), `paywalls` for paywall copy and layout.
 4. Build and run locally, walk the item's journey stage in the simulator (on a Mac; a cloud session without
@@ -189,8 +189,7 @@ more than one, this table decides:
 | Product Hunt | `launch` plans the day | `directory-submissions` writes and tracks the listing |
 | Job to be done, JTBD | `jobs-to-be-done` writes the job | `customer-research` collects the quotes it cites |
 | Compare with competitors | `aso` for App Store competitors | `competitors` only for vs and alternative pages on the app's website |
-| Onboarding, first run, rating prompt | `first-impression` | `apple-design` reviews how a screen looks; `referrals` only replies to App Store reviews |
-| UX audit, walk the app as a user | `user-journey` | `apple-design` for a HIG review of given screens |
+| Onboarding, first run, rating prompt | `first-impression` | `referrals` only replies to App Store reviews |
 | Ambassador program | `community-marketing` for unpaid advocates | `influencer-marketing` for paid creators, `referrals` for a reward per referral |
 | Screenshots and store images | the app's screenshots doc, automated by `asc-shots-pipeline` | `store-assets` for the header, search-result image and new devices; `asc-metadata-sync` for text |
 | Marketing ideas, "brainstorm marketing" | `marketing-ideas` | `brainstorming` is for the product, as above |

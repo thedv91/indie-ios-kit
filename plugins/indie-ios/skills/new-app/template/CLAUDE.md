@@ -83,7 +83,7 @@ From the `indie-ios` plugin (marketplace `indie-ios-kit`), installed for this re
 | Phase | Skills | Source |
 | --- | --- | --- |
 | Idea | `brainstorming`, `customer-research`, `jobs-to-be-done`, `aso`, `pricing`, `product-marketing`, `user-journey` (map), `grilling` (global) | obra/superpowers, coreyhaines31/marketingskills, wondelai/skills, indie-ios-kit |
-| Build | `intent-driven-development`, `swiftui-pro`, `apple-design`, `tdd`, `/code-review` (built-in), `verification-before-completion`, `paywalls`, `user-journey` (walk), `first-impression` | affaan-m/ecc, twostraws/swiftui-agent-skill, dickwu/apple-design-skill, mattpocock/skills, obra/superpowers, indie-ios-kit |
+| Build | `intent-driven-development`, `swiftui-pro`, `tdd`, `/code-review` (built-in), `verification-before-completion`, `paywalls`, `user-journey` (walk), `first-impression` | affaan-m/ecc, twostraws/swiftui-agent-skill, mattpocock/skills, obra/superpowers, indie-ios-kit |
 | Store | `aso`, `copywriting`, `asc-*` (cli-usage, metadata-sync, localize-metadata, shots-pipeline, signing-setup, xcode-build, testflight-orchestration, release-flow, submission-health), `store-assets`, `app-store-preflight-skills`, `app-store-review` | rorkai/app-store-connect-cli-skills, truongduy2611/app-store-preflight-skills, safaiyeh/app-store-review-skill, indie-ios-kit |
 | Launch | `launch`, `directory-submissions`, `public-relations`, `social`, `asc-whats-new-writer` | coreyhaines31/marketingskills, rorkai/app-store-connect-cli-skills |
 | Growth | `marketing-plan`, `marketing-ideas`, `competitors`, `community-marketing`, `influencer-marketing`, `referrals`, `free-tools`, `ai-seo`, `marketing-psychology` | coreyhaines31/marketingskills |
